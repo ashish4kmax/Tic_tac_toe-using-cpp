@@ -1,6 +1,3 @@
 # Tic_tac_toe-using-cpp
-<video controls autoplay muted loop width="500px">
-  <source src="https://user-images.githubusercontent.com/111702590/227804662-dda9efff-9b03-4ce3-ba99-26f80cf0188a.mp4">
-  <source src="https://user-images.githubusercontent.com/111702590/227804662-dda9efff-9b03-4ce3-ba99-26f80cf0188a.ogg">
-  Your browser does not support the video tag.
-</video>
+![S1](https://user-images.githubusercontent.com/111702590/227804919-c4fda4bb-f384-4a22-92fc-399fdec019bc.PNG)
+![S2](https://user-images.githubusercontent.com/111702590/227804920-58583438-63f2-4bf4-9b64-860f657cc8ac.PNG)
