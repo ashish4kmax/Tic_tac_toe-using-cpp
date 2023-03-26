@@ -1,2 +1,3 @@
 # Tic_tac_toe-using-cpp
-<img src="https://media.tenor.com/rH3Yh7-6UhsAAAAC/cereal-tic-tac-toe.gif" alt="tictactoe>
+![cereal-tic-tac-toe](https://user-images.githubusercontent.com/111702590/227805102-2bc118a3-3f5c-4cbd-a1a1-8539ac4f4315.gif)
+
