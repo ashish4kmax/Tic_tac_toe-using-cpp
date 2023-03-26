@@ -1,3 +1,5 @@
 # Tic_tac_toe-using-cpp
-![cereal-tic-tac-toe](https://user-images.githubusercontent.com/111702590/227805102-2bc118a3-3f5c-4cbd-a1a1-8539ac4f4315.gif)
+
+![ezgif com-resize](https://user-images.githubusercontent.com/111702590/227805152-14743e3d-c490-419e-82e3-ac26fab7c8e2.gif)
+
 
