@@ -57,6 +57,7 @@ void display(vector<vector<char>> &tictac)
 
 int main()
 {
+    cout << "-------------------------------------##Welcome to TIC TAC TOE lets play the game!!##-------------------------------------" << endl;
     string p1, p2;
     cout << "Enter player one name : ";
     cin >> p1;
@@ -118,13 +119,14 @@ int main()
         if (choice1 == 'H' && choice2 == 'T')
         {
             // Player-1 starts
-            cout<<p1<<" wins the toss so he will start"<<endl;
+            cout << p1 << " wins the toss so he will start" << endl;
             for (;;)
             {
                 cout << "Enter the position to put X : " << endl;
                 cin >> pos1 >> pos2;
-                if((pos1<0 || pos1>2) && (pos2<0 || pos2>2)) {
-                    cout<<"Opps out of bounds opponet gets the chance!!"<<endl;
+                if ((pos1 < 0 || pos1 > 2) && (pos2 < 0 || pos2 > 2))
+                {
+                    cout << "Opps out of bounds opponet gets the chance!!" << endl;
                     goto pl1;
                 }
                 tictac[pos1][pos2] = 'X';
@@ -134,17 +136,21 @@ int main()
                     goto end;
                 }
                 display(tictac);
+                cout<<endl;
+                cout<<endl;
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
                     goto end;
                 }
-                pl1:
+            pl1:
                 cout << "Enter the position to put O : " << endl;
                 cin >> pos1 >> pos2;
                 tictac[pos1][pos2] = 'O';
                 count2++;
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
@@ -172,17 +178,21 @@ int main()
                     goto end;
                 }
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
                     goto end;
                 }
-                pl2:
+            pl2:
                 cout << "Enter the position to put X : " << endl;
                 cin >> pos1 >> pos2;
                 tictac[pos1][pos2] = 'X';
                 count2++;
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
@@ -214,17 +224,21 @@ int main()
                     goto end;
                 }
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
                     goto end;
                 }
-                pl3:
+            pl3:
                 cout << "Enter the position to put O : " << endl;
                 cin >> pos1 >> pos2;
                 tictac[pos1][pos2] = 'O';
                 count2++;
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
@@ -252,17 +266,21 @@ int main()
                     goto end;
                 }
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
                     goto end;
                 }
-                pl4:
+            pl4:
                 cout << "Enter the position to put X : " << endl;
                 cin >> pos1 >> pos2;
                 tictac[pos1][pos2] = 'X';
                 count2++;
                 display(tictac);
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
@@ -272,6 +290,7 @@ int main()
         }
     }
 
-    end:
+end:
+    cout << "\n---------------------------------------##Thank you for playing TIC TAC TOE!!##-----------------------------------------" << endl;
     return 0;
 }
