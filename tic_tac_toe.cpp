@@ -82,7 +82,8 @@ int main()
     {
         for (int j = 0; j < 3; j++)
         {
-            cout << tictac[i][j] << "(" << i << j << ")"<< " ";
+            cout << tictac[i][j] << "(" << i << j << ")"
+                 << " ";
         }
         cout << endl;
     }
@@ -113,6 +114,7 @@ int main()
 
     int pos1 = 0;
     int pos2 = 0;
+    int flag = 0;
 
     if (toss == 'H')
     {
@@ -136,11 +138,12 @@ int main()
                     goto end;
                 }
                 display(tictac);
-                cout<<endl;
-                cout<<endl;
+                cout << endl;
+                cout << endl;
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
+                    flag++;
                     goto end;
                 }
             pl1:
@@ -154,6 +157,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
+                    flag++;
                     goto end;
                 }
             }
@@ -183,6 +187,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
+                    flag++;
                     goto end;
                 }
             pl2:
@@ -196,6 +201,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
+                    flag++;
                     goto end;
                 }
             }
@@ -229,6 +235,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
+                    flag++;
                     goto end;
                 }
             pl3:
@@ -242,6 +249,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
+                    flag++;
                     goto end;
                 }
             }
@@ -271,6 +279,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p2 << " wins!!";
+                    flag++;
                     goto end;
                 }
             pl4:
@@ -284,6 +293,7 @@ int main()
                 if (check(tictac))
                 {
                     cout << p1 << " wins!!";
+                    flag++;
                     goto end;
                 }
             }
@@ -291,6 +301,12 @@ int main()
     }
 
 end:
+
+    if (flag == 0)
+    {
+        display(tictac);
+        cout << "\nIt's a tie well played both of you " << p1 << " and " << p2 << endl;
+    }
     cout << "\n---------------------------------------##Thank you for playing TIC TAC TOE!!##-----------------------------------------" << endl;
     return 0;
 }
